@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float item1=sc.nextFloat();
+        float item2=sc.nextFloat();
+        float d=sc.nextFloat();
+        float tot=item1+item2;
+        float s=(float)(tot/100)*d;
+        float disc=tot-s;
+        System.out.printf("%.2f\n",tot);
+        System.out.printf("%.2f\n",disc);
+        System.out.printf("%.2f\n",s);
+    }
+}

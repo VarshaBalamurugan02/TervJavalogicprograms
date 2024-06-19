@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int total=sc.nextInt();
+		
+		int teams=sc.nextInt();
+		int students=total/teams;
+		System.out.println(students);
+		int leftout=total%teams;
+		System.out.println(leftout);
+	}
+
+}

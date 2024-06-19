@@ -1,0 +1,13 @@
+import java.util.Scanner;
+ public class Main{
+    public static void main(String args[]){
+        Scanner AC=new Scanner(System.in);
+        float A = AC.nextFloat();
+        float B = AC.nextFloat();
+        float C = AC.nextFloat();
+        float D = AC.nextFloat();
+        float E = AC.nextFloat();
+        float F =(A+B+C+D+E) / 5;
+        System.out.printf("%.2f",F);
+ }
+ }

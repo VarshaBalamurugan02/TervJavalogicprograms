@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+    public static void main (String[] args){
+        Scanner fe=new Scanner(System.in);
+        int totalcoins = fe.nextInt();
+        int benSharePercentage = fe.nextInt();
+        int blackbeardSharePercentage = fe.nextInt();
+        int benshare = (totalcoins * benSharePercentage)/100;
+        int remainingCoins = totalcoins - benshare;
+        int blackbeardshare = (remainingCoins * blackbeardSharePercentage)/100;
+        remainingCoins -= blackbeardshare;
+        int number_of_other_pirates = 3;
+        int other_pirates_share = remainingCoins / number_of_other_pirates;
+        System.out.println(benshare);
+        System.out.println(blackbeardshare);
+        System.out.println(other_pirates_share);
+    }
+
+    }
